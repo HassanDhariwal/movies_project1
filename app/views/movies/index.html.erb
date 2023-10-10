@@ -17,7 +17,10 @@
 
 </div>
 
+
+
 <div class="row  row-cols-sm-5  d-flex justify-content-center align-items-center g-2">
+  <% 4.times do %>
   <div class="col">
     <div class="card">
       <%= image_tag "/assets/marcin.jpg", class: "card-img-top  ", alt: " " %>
@@ -30,9 +33,13 @@
         <h5 class="card-title">Batman</h5>
         <p class="card-text">2023</p>
       </div>
-
   </div>
+    <% end %>
+</div>
+<hr>
 
+<div class="row my-3 row-cols-sm-5  d-flex justify-content-center align-items-center g-2">
+  <%  for a in 1..4 do %>
   <div class="col">
     <div class="card">
       <%= image_tag "/assets/spiderman1.jpg", class: "card-img-top ", alt:" " %>
@@ -46,13 +53,16 @@
         <p class="card-text">2023</p>
       </div>
   </div>
-
+  <%end %>
+</div>
+<hr>
+<div class="row  row-cols-sm-5  d-flex justify-content-center align-items-center g-2">
+  <% (1..4).each do %>
   <div class="col">
     <div class="card" >
       <%= image_tag "/assets/dedpol.jpg", class: "card-img-top ", alt:"..." %>
       <div class="overlay">
         <h1 class="title ">Batman</h1>
-<!--        <a href="#" class="btn ">view page</a>-->
         <button type="button" class="btn btn-primary">view page</button>
       </div>
     </div>
@@ -61,21 +71,22 @@
         <p class="card-text">2023</p>
       </div>
   </div>
-
-  <div class="col">
-    <div class="card">
-      <%= image_tag "/assets/emmanuel.jpg", class: "card-img-top ", alt:"..."%>
-      <div class="overlay">
-        <h1 class="title">Batman</h1>
-        <a href="#" class="btn btn-primary">view page</a>
-      </div>
-    </div>
-      <div class="card-body">
-        <h5 class="card-title">Ironman</h5>
-        <p class="card-text">2023</p>
-      </div>
-    </div>
+    <% end %>
 </div>
+<!--  <div class="col">-->
+<!--    <div class="card">-->
+      <%#= image_tag "/assets/emmanuel.jpg", class: "card-img-top ", alt:"..."%>
+<!--      <div class="overlay">-->
+<!--        <h1 class="title">Batman</h1>-->
+<!--        <a href="#" class="btn btn-primary">view page</a>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--      <div class="card-body">-->
+<!--        <h5 class="card-title">Ironman</h5>-->
+<!--        <p class="card-text">2023</p>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--</div>-->
 
 </body>
 </html>
