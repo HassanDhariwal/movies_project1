@@ -21,10 +21,12 @@
 }
 
 
-.body{
-    background: black ;
+body{
+  background: #2E2F30;
 }
-.title {
+.title,
+.rating,
+.type {
     color: white;
 }
 .card .overlay {
