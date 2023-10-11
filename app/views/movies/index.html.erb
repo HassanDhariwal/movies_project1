@@ -21,8 +21,8 @@
 
 <div class="row  row-cols-sm-5  d-flex justify-content-center align-items-center g-2">
   <% @movies.each do |movie| %>
-  <div class="col">
-    <div class="card">
+  <div class="col ">
+    <div class="card bg-success-subtle">
       <%= image_tag movie[:image_path], class: "card-img-top  ", alt: movie[:title] %>
       <div class="overlay">
         <span class="bi bi-star-fill fa-5x text-success "></span>
